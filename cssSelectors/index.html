@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element selector*/
+        div {
+            color: orange;
+        }
+        .one
+        {color:purple;}
+        /*class selector*/
+        .red {
+            color: red;
+        }
+
+        /*id selector*/
+        #red {
+            color: black;
+            font-weight: 900;
+            background-color: brown;
+        }
+        /*Direct child styling*/
+        div>p {
+            color: blue;
+        }
+        /*Descendent styling*/
+        ol h2{color:teal;}
+        
+        /*Universal selector*/
+        *{padding:10;margin:0}
+
+        /*Pseudo selector for links*/
+        a:visited{color: yellow;}
+        a:link{color:green;}
+        a:active{background-color: aqua;}/*when clicked*/
+        a:hover{background-color: yellowgreen;}/*when cursor is on link*/
+        /*whereever p is first child of parent class*/
+        p:first-child{background-color: aqua;}
+        
+            </style>
+</head>
+
+<body>
+    <h1 Styling techniques></h1>
+    <ol>
+        <li> 
+            <main class="one">
+                <p>I am first</p>
+                <p>I am second</p>
+            </div>
+        </li>
+        <li>
+            <div>Div styled here using element selector</div>
+        </li>
+        <li>
+            <p class="red">class selector in paragraph tag</p>
+        </li>
+        <li>
+            <span id="red">ID selector styled here</span>
+        </li>
+        <li>
+            <div>
+                <p>Child selector styled here in p in div in list</p>
+            </div>
+        </li>
+        <li><h2>Descendent stylinh done here for h2 in ol</h2></li>
+        <li>
+            <a href="https://www.google.com">Go to google</a>
+        </li>
+    </ol>
+</body>
+
+</html>
