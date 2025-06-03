@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            margin: 23px auto;
+            /*topbottommargin leftrightmargin*/
+            box-sizing: border-box;
+            font-size:32px
+        }
+          .container >div { 
+            border: 2px solid black;
+            width:50%;/* 80vw;*/           
+            font-size:0.75em;
+        }
+        .container > div >div
+         { border: 2px solid black;
+          width:50%;           
+            font-size:0.75em;
+        }
+        .mycontainervmin{
+       border: 2px solid black;
+            width: 80vw;
+            margin: auto;
+           
+         background-color: red;   
+         color:yellow;
+         font-size:18px;
+        }
+    </style>
+    <title>Dofewcument</title>
+</head>
+
+<body>
+    <div class="box">this is a box</div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro, sunt earum excepturi
+        odio optio quae similique hic? Nihil nulla ducimus enim, cumque eaque architecto laboriosam incidunt.
+      <div >this a paragraph<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos est quis! Labore corrupti itaque ad? Inventore numquam rerum eveniet vitae aliquam impedit aspernatur cum omnis voluptatibus quasi. Nam sequi saepe aut magnam maiores tenetur non asperiores, ipsam iure eaque numquam repellat blanditiis dolore natus nobis cupiditate consequatur nihil esse, consequuntur deleniti? Fuga doloribus quae ipsa asperiores quod laudantium exercitationem dolorum, veritatis repudiandae beatae, dolores neque tempora a voluptate aut consectetur numquam incidunt nemo rem! Unde quod quos, ex laboriosam possimus dolorem quas quam natus id explicabo quidem asperiores perferendis incidunt, veritatis blanditiis dolor a porro velit ut sunt perspiciatis?.</div></div></div>
+    <div style="display:inline">box again here
+    </div>
+    <div class="mycontainervmin"> mycontainer vmin100</div>
+    <span>Hi span</span>
+    <span>SPAN again</span>
+  
+</body>
+
+</html>

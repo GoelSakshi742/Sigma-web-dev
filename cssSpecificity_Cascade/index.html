@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color:aqua;}/*element selector:specificity selector:1*/
+        h1.yellowHead{color:yellowgreen}/*element selector+class selector- 10+1=11*/
+        p{color:blue;}/*element selector:specificity selector:1*/
+        .cpurple{color:purple }/*class selector:specificity selector:10*/
+        .cred{color:red }/*class selector:specificity selector:10*/
+        .cyellow{color:yellow }/*class selector:specificity selector:10*/
+        [data-x=a]/*attribute selector:specificity selector:10*/
+        {color: red;}
+    </style>
+</head>
+<body>
+    <div><h1  data-x="a" class="cpurple cyellow cred yellowHead">css specificity</h1></div>
+</body>
+</html>
