@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+             /* position:absolute;
+             top:2px; */
+            border: 2px solid black;
+            height: 30vh;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        .box1 {
+            background-color: violet;
+            position:sticky;
+            /* ;left:0; */
+            width:100%;
+            height: 5vh;margin: 0;;padding: 0;top:0;
+        }
+
+        .box2 {
+            background-color: blue;
+            position:relative;
+            top:100px;
+            left:100px
+        }
+
+        .box3 {
+            background-color: orange;
+            position:absolute;
+        }
+
+        .box4 {
+            background-color: red;
+        }
+        .parent
+        {
+        margin:23px;
+        padding:23px;
+        border:2px solid blue;
+        position:relative;
+        top:19px;left:10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+    </div>
+</body>
+
+</html>
